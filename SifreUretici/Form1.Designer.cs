@@ -39,9 +39,9 @@
             this.lblSifreUzunlugu = new System.Windows.Forms.Label();
             this.nudSifreSayisi = new System.Windows.Forms.NumericUpDown();
             this.nudSifreUzunlugu = new System.Windows.Forms.NumericUpDown();
-            this.btnSifirla = new System.Windows.Forms.Button();
             this.txtUretilenSifreler = new System.Windows.Forms.RichTextBox();
             this.btnUret = new System.Windows.Forms.Button();
+            this.btnSifirla = new System.Windows.Forms.Button();
             this.gbParametreler.SuspendLayout();
             this.gbSifreler.SuspendLayout();
             this.tablePanel.SuspendLayout();
@@ -151,7 +151,7 @@
             this.lblSifreSayisi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSifreSayisi.Location = new System.Drawing.Point(3, 124);
             this.lblSifreSayisi.Name = "lblSifreSayisi";
-            this.lblSifreSayisi.Size = new System.Drawing.Size(147, 26);
+            this.lblSifreSayisi.Size = new System.Drawing.Size(147, 35);
             this.lblSifreSayisi.TabIndex = 4;
             this.lblSifreSayisi.Text = "Şifre Sayısı: ";
             // 
@@ -159,7 +159,7 @@
             // 
             this.lblSifreUzunlugu.AutoSize = true;
             this.lblSifreUzunlugu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSifreUzunlugu.Location = new System.Drawing.Point(3, 150);
+            this.lblSifreUzunlugu.Location = new System.Drawing.Point(3, 159);
             this.lblSifreUzunlugu.Name = "lblSifreUzunlugu";
             this.lblSifreUzunlugu.Size = new System.Drawing.Size(147, 35);
             this.lblSifreUzunlugu.TabIndex = 5;
@@ -184,7 +184,7 @@
             // 
             // nudSifreUzunlugu
             // 
-            this.nudSifreUzunlugu.Location = new System.Drawing.Point(156, 153);
+            this.nudSifreUzunlugu.Location = new System.Drawing.Point(156, 162);
             this.nudSifreUzunlugu.Minimum = new decimal(new int[] {
             6,
             0,
@@ -199,16 +199,6 @@
             0,
             0});
             // 
-            // btnSifirla
-            // 
-            this.btnSifirla.Location = new System.Drawing.Point(3, 188);
-            this.btnSifirla.Name = "btnSifirla";
-            this.btnSifirla.Size = new System.Drawing.Size(147, 60);
-            this.btnSifirla.TabIndex = 8;
-            this.btnSifirla.Text = "SIFIRLA";
-            this.btnSifirla.UseVisualStyleBackColor = true;
-            this.btnSifirla.Click += new System.EventHandler(this.btnSifirla_Click);
-            // 
             // txtUretilenSifreler
             // 
             this.txtUretilenSifreler.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -221,13 +211,23 @@
             // 
             // btnUret
             // 
-            this.btnUret.Location = new System.Drawing.Point(156, 188);
+            this.btnUret.Location = new System.Drawing.Point(156, 197);
             this.btnUret.Name = "btnUret";
             this.btnUret.Size = new System.Drawing.Size(147, 60);
             this.btnUret.TabIndex = 9;
             this.btnUret.Text = "ÜRET";
             this.btnUret.UseVisualStyleBackColor = true;
             this.btnUret.Click += new System.EventHandler(this.btnUret_Click);
+            // 
+            // btnSifirla
+            // 
+            this.btnSifirla.Location = new System.Drawing.Point(3, 197);
+            this.btnSifirla.Name = "btnSifirla";
+            this.btnSifirla.Size = new System.Drawing.Size(147, 60);
+            this.btnSifirla.TabIndex = 8;
+            this.btnSifirla.Text = "SIFIRLA";
+            this.btnSifirla.UseVisualStyleBackColor = true;
+            this.btnSifirla.Click += new System.EventHandler(this.btnSifirla_Click);
             // 
             // Form1
             // 
@@ -264,9 +264,9 @@
         private System.Windows.Forms.Label lblSifreUzunlugu;
         private System.Windows.Forms.NumericUpDown nudSifreSayisi;
         private System.Windows.Forms.NumericUpDown nudSifreUzunlugu;
-        private System.Windows.Forms.Button btnSifirla;
         private System.Windows.Forms.RichTextBox txtUretilenSifreler;
         private System.Windows.Forms.Button btnUret;
+        private System.Windows.Forms.Button btnSifirla;
     }
 }
 

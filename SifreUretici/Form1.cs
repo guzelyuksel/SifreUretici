@@ -24,6 +24,7 @@ namespace SifreUretici
 
         private void btnUret_Click(object sender, EventArgs e)
         {
+            txtUretilenSifreler.Clear();
             kucukHarf = cbKucukHarf.Checked;
             buyukHarf = cbBuyukHarf.Checked;
             rakam = cbRakam.Checked;
@@ -61,7 +62,12 @@ namespace SifreUretici
 
         private void btnSifirla_Click(object sender, EventArgs e)
         {
-            txtUretilenSifreler.Clear();
+            cbKucukHarf.Checked = false;
+            cbBuyukHarf.Checked = false;
+            cbRakam.Checked = false;
+            cbOzelKarakter.Checked = false;
+            nudSifreSayisi.Value = 1;
+            nudSifreUzunlugu.Value = 6;
         }
     }
 }
